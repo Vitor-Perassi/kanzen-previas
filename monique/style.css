@@ -69,13 +69,19 @@ nav.open .mmenu{display:flex}
 .hero-art .ph img{width:100%;height:100%;object-fit:cover}
 .fc{position:absolute;background:#fff;border-radius:16px;padding:10px 14px;box-shadow:0 12px 30px rgba(70,40,50,.14);font-size:14px;font-weight:800;display:flex;gap:8px;align-items:center;white-space:nowrap}
 .fc i{font-style:normal;font-size:20px}
-.fc.a{top:14%;left:-14px}.fc.b{bottom:20%;right:-12px}.fc.c{bottom:4%;left:6%}
+.fc.a{top:60%;left:-22px}.fc.b{top:74%;right:-18px}.fc.c{bottom:4%;left:-10px}
 @media(max-width:900px){
   .hero .wrap{grid-template-columns:1fr}
   .hero-art{max-width:420px;order:-1}
-  .fc.a{left:0}.fc.b{right:0}
+  .fcs{position:relative;margin-top:-19px;padding:0 8px;display:flex;flex-wrap:wrap;justify-content:center;gap:6px;z-index:2}
+  .fcs .fc{position:static;font-size:13px;padding:8px 12px;border-radius:999px;box-shadow:0 8px 20px rgba(70,40,50,.16)}
+  .fcs .fc i{font-size:16px}
+  .hero .tag{display:none}
 }
-@media(max-width:420px){.fc{font-size:12.5px;padding:8px 11px}.fc i{font-size:17px}.ctas .btn{flex:1 1 100%;justify-content:center}}
+@media(min-width:480px) and (max-width:900px){
+  .fcs{flex-wrap:nowrap;margin-left:-60px;margin-right:-60px}
+}
+@media(max-width:420px){.fcs .fc{font-size:12px;padding:7px 10px;gap:5px}.fcs .fc i{font-size:14px}.ctas .btn{flex:1 1 100%;justify-content:center}}
 
 section{padding:clamp(56px,8vw,88px) 0}
 .sh{max-width:640px;margin-bottom:clamp(28px,4vw,42px)}
