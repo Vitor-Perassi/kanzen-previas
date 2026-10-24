@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#e46c8c">
+<title>Monique Paula · Nutricionista Infantil | Introdução Alimentar e Seletividade</title>
+<meta name="description" content="Nutricionista infantil (USP, especialista pela Unifesp). Introdução alimentar, seletividade e obesidade infantil. Atendimento em Santana (SP), Mogi das Cruzes e online.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23e46c8c'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbf7f2; --surface:#fff; --ink:#3a2e33; --muted:#76696e;
+  --pink:#e46c8c; --pink-d:#c9506f; --pink-soft:#fbe4ea;
+  --olive:#a9b83c; --olive-d:#6f7a1f; --olive-soft:#eef2d6;
+  --sun:#f5c84c; --line:#efe5dc; --r:22px;
+  --pad:clamp(16px,4vw,28px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:Nunito,system-ui,sans-serif;font-size:clamp(16px,1.6vw,17px);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:Poppins,system-ui,sans-serif;line-height:1.15;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 var(--pad)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+.preview-bar{background:var(--ink);color:#fff;font-size:13px;text-align:center;padding:7px var(--pad);line-height:1.4}
+.preview-bar b{color:var(--sun)}
+
+/* ---------- NAV ---------- */
+nav{position:sticky;top:0;z-index:40;background:rgba(251,247,242,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo svg{width:44px;height:36px;flex:none;color:var(--pink)}
+.logo .wm{display:flex;flex-direction:column;line-height:1.05;min-width:0}
+.logo b{font:700 16px Poppins,sans-serif;letter-spacing:.08em;white-space:nowrap}
+.logo small{font-size:12px;color:var(--muted);font-weight:700;white-space:nowrap}
+.links{display:flex;gap:24px;font-weight:700;font-size:15px}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--pink-d)}
+.nav-cta{display:flex;align-items:center;gap:8px}
+.burger{display:none;width:44px;height:44px;border:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:var(--ink);margin:4px auto;border-radius:2px;transition:.2s}
+.mmenu{display:none;flex-direction:column;padding:8px var(--pad) 18px;border-top:1px solid var(--line)}
+.mmenu a{padding:13px 4px;font-weight:800;text-decoration:none;border-bottom:1px solid var(--line)}
+.mmenu .btn{margin-top:14px;justify-content:center}
+nav.open .mmenu{display:flex}
+@media(max-width:900px){.links{display:none}.burger{display:block}.nav-cta .btn{display:none}}
+
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer;font:800 15.5px Nunito,sans-serif;padding:14px 24px;min-height:48px;border-radius:999px;text-decoration:none;transition:transform .15s,background .15s;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn-pink{background:var(--pink);color:#fff}
+.btn-pink:hover{background:var(--pink-d)}
+.btn-line{background:var(--surface);color:var(--ink);border:1.5px solid var(--line)}
+.btn-olive{background:var(--olive-d);color:#fff}
+
+/* ---------- HERO ---------- */
+.hero{padding:clamp(36px,6vw,72px) 0 clamp(48px,7vw,80px)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,56px);align-items:center}
+.tag{display:inline-block;background:var(--pink-soft);color:var(--pink-d);font-weight:800;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:16px}
+.tag.ol{background:var(--olive-soft);color:var(--olive-d)}
+.hero h1{font-size:clamp(34px,6vw,60px);font-weight:800;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--pink)}
+.squig{display:inline-block;position:relative}
+.squig::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:10px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 10'%3E%3Cpath d='M2 6c8-6 12 4 20 0s12-6 20 0 12 4 20 0 12-6 20 0 12 4 20 0 10-4 16 0' fill='none' stroke='%23a9b83c' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+.hero p.lead{font-size:clamp(17px,1.9vw,19px);color:var(--muted);max-width:540px;margin-bottom:26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.proof{display:flex;align-items:center;gap:14px;margin-top:28px;flex-wrap:wrap}
+.stars{color:#f2a900;letter-spacing:2px;font-size:18px}
+.proof small{color:var(--muted);font-weight:700;font-size:14px}
+.creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.creds span{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13.5px;font-weight:700}
+.hero-art{position:relative;max-width:500px;justify-self:center;width:100%}
+.hero-art .ph{border-radius:220px 220px var(--r) var(--r);overflow:hidden;aspect-ratio:900/959;background:var(--pink-soft);box-shadow:0 30px 60px -30px rgba(120,60,80,.45)}
+.hero-art .ph img{width:100%;height:100%;object-fit:cover}
+.fc{position:absolute;background:#fff;border-radius:16px;padding:10px 14px;box-shadow:0 12px 30px rgba(70,40,50,.14);font-size:14px;font-weight:800;display:flex;gap:8px;align-items:center;white-space:nowrap}
+.fc i{font-style:normal;font-size:20px}
+.fc.a{top:14%;left:-14px}.fc.b{bottom:20%;right:-12px}.fc.c{bottom:4%;left:6%}
+@media(max-width:900px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-art{max-width:420px;order:-1}
+  .fc.a{left:0}.fc.b{right:0}
+}
+@media(max-width:420px){.fc{font-size:12.5px;padding:8px 11px}.fc i{font-size:17px}.ctas .btn{flex:1 1 100%;justify-content:center}}
+
+section{padding:clamp(56px,8vw,88px) 0}
+.sh{max-width:640px;margin-bottom:clamp(28px,4vw,42px)}
+.sh h2{font-size:clamp(27px,3.8vw,40px);font-weight:700;margin-bottom:12px}
+.sh p{color:var(--muted)}
+.center{text-align:center;margin-left:auto;margin-right:auto}
+
+/* ---------- QUOTE BAND ---------- */
+.band{background:var(--pink);color:#fff;padding:clamp(34px,5vw,48px) 0}
+.band .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.band div div{display:flex;gap:12px;align-items:flex-start}
+.band b{font:700 18px Poppins,sans-serif;display:block}
+.band p{opacity:.92;font-size:15px}
+.band .n{font:800 30px Poppins,sans-serif;line-height:1;opacity:.55}
+@media(max-width:760px){.band .wrap{grid-template-columns:1fr}}
+
+/* ---------- ABOUT ---------- */
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,60px);align-items:center}
+.about .pic{border-radius:var(--r);overflow:hidden;position:relative;aspect-ratio:800/732}
+.about .pic img{width:100%;height:100%;object-fit:cover}
+.about .pic .badge{position:absolute;left:14px;bottom:14px;background:#fff;border-radius:14px;padding:10px 14px;font-weight:800;font-size:14px;color:var(--olive-d)}
+.about p{color:var(--muted);margin-bottom:14px}
+.timeline{list-style:none;margin-top:20px;display:grid;gap:12px}
+.timeline li{display:grid;grid-template-columns:62px 1fr;gap:12px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:12px 14px}
+.timeline li b{font:700 15px Poppins,sans-serif;color:var(--pink-d)}
+.timeline li span{font-size:15px;font-weight:700}
+.fun{margin-top:18px;background:var(--olive-soft);border-radius:16px;padding:14px 16px;font-size:15px;color:var(--olive-d);font-weight:700}
+@media(max-width:900px){.about .wrap{grid-template-columns:1fr}}
+
+/* ---------- SERVICES ---------- */
+.services{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media(max-width:1020px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:flex;flex-direction:column}
+.card .ico{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:26px;margin-bottom:14px}
+.card h3{font-size:19px;font-weight:700;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15.5px;flex:1}
+.card .meta{margin-top:14px;font-size:13.5px;font-weight:800;color:var(--olive-d)}
+.card a{margin-top:14px;font-weight:800;color:var(--pink-d);text-decoration:none;font-size:15px}
+
+/* ---------- ONLINE ---------- */
+.online{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,4vw,48px);align-items:center;background:var(--olive-soft);border-radius:32px;padding:clamp(22px,4vw,44px)}
+.online img{width:clamp(150px,22vw,230px);border-radius:20px;aspect-ratio:360/460;object-fit:cover}
+.online h2{font-size:clamp(25px,3.2vw,34px);margin-bottom:10px}
+.online p{color:var(--muted);margin-bottom:18px}
+.online ul{list-style:none;display:grid;gap:8px;margin-bottom:22px;font-weight:700}
+.online li::before{content:"✓ ";color:var(--olive-d)}
+@media(max-width:640px){.online{grid-template-columns:1fr}.online img{width:100%;max-height:320px;aspect-ratio:auto;object-position:top}}
+
+/* ---------- STEPS ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.step{position:relative;padding-top:56px}
+.step::before{counter-increment:s;content:counter(s);position:absolute;top:0;left:0;width:42px;height:42px;border-radius:50%;background:var(--pink);color:#fff;font:700 18px Poppins,system-ui,sans-serif;display:grid;place-items:center}
+.step h3{font-size:17px;margin-bottom:6px}
+.step p{font-size:15px;color:var(--muted)}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.steps{grid-template-columns:1fr}.step{padding:0 0 0 58px;min-height:44px}}
+
+/* ---------- BOOKING ---------- */
+.booking{background:var(--ink);color:#fff;border-radius:32px;padding:clamp(22px,4.5vw,48px);display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,4vw,44px)}
+.booking h2{font-size:clamp(26px,3.4vw,38px);margin-bottom:12px}
+.booking .intro p{opacity:.85}
+.booking .intro ul{margin-top:18px;list-style:none;display:grid;gap:8px;font-weight:700}
+.booking .intro li::before{content:"✓  ";color:var(--olive)}
+.panel{background:#fff;color:var(--ink);border-radius:var(--r);padding:clamp(16px,3vw,26px);min-width:0}
+.panel h4{font:800 12.5px Nunito,system-ui,sans-serif;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:4px 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.chip{border:1.5px solid var(--line);background:var(--bg);border-radius:12px;padding:10px 14px;min-height:44px;font:700 14.5px Nunito,system-ui,sans-serif;cursor:pointer;color:var(--ink)}
+.chip:hover{border-color:var(--pink)}
+.chip.on{background:var(--pink);border-color:var(--pink);color:#fff}
+.chip:disabled{opacity:.35;cursor:not-allowed;text-decoration:line-through}
+.days{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.days .chip{display:flex;flex-direction:column;align-items:center;min-width:64px;line-height:1.2;flex:none}
+.days .chip small{font-weight:600;font-size:12px;opacity:.8}
+.modal-row{display:flex;gap:8px;margin-bottom:18px}
+.modal-row .chip{flex:1}
+.field{display:grid;gap:6px;margin-bottom:12px}
+.field input{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:13px 14px;font:600 16px Nunito,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+.field input:focus{outline:2px solid var(--pink-soft);border-color:var(--pink)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.panel .btn{width:100%;justify-content:center;margin-top:6px}
+.panel .btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.done{display:none;text-align:center;padding:20px 4px}
+.done .big{font-size:50px}
+.done h3{font-size:23px;margin:8px 0}
+.done p{color:var(--muted);font-size:15.5px}
+.done .resume{background:var(--bg);border-radius:14px;padding:14px;margin:16px 0;text-align:left;font-size:15px}
+.demo-note{font-size:12.5px;color:var(--muted);text-align:center;margin-top:10px}
+@media(max-width:900px){.booking{grid-template-columns:1fr}}
+@media(max-width:520px){.two{grid-template-columns:1fr}.booking{border-radius:24px}}
+
+/* ---------- REVIEWS ---------- */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rv{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.rv p{font-size:15.5px;margin:10px 0 14px}
+.rv b{font-size:14.5px}
+.rv small{display:block;color:var(--muted);font-size:13px}
+.g-badge{display:inline-flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-weight:800;margin-top:8px}
+@media(max-width:900px){.reviews{grid-template-columns:1fr}}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:780px;margin:0 auto}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 20px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:800;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--pink);font-size:22px;line-height:1;flex:none}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin-top:10px;font-size:15.5px}
+
+/* ---------- CONTACT ---------- */
+.contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px}
+.c-box{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:clamp(20px,3vw,30px)}
+.c-box h3{font-size:22px;margin-bottom:16px}
+.c-row{display:grid;grid-template-columns:28px 1fr;gap:10px;margin-bottom:14px;color:var(--muted);font-size:15.5px}
+.c-row b{color:var(--ink);display:block}
+.c-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.map{border-radius:var(--r);overflow:hidden;min-height:340px;border:1px solid var(--line);background:#e9e4dc}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+@media(max-width:900px){.contact .wrap{grid-template-columns:1fr}.c-actions .btn{flex:1 1 auto;justify-content:center}}
+
+footer{padding:36px 0 100px;color:var(--muted);font-size:14px;text-align:center}
+footer .row{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:8px}
+footer a{text-decoration:none;font-weight:700}
+footer .kz{margin-top:10px;font-size:12.5px}
+
+.wa-float{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.2);z-index:30}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+</style>
+</head>
+<body>
+
+<div class="preview-bar">🔍 <b>Prévia</b> feita pela Kanzen Studio para a Nutri Monique Paula · ainda podemos ajustar tudo</div>
+
+<nav id="nav">
+  <div class="wrap">
+    <a class="logo" href="#topo" aria-label="Monique Paula, nutricionista infantil">
+      <svg viewBox="0 0 64 52" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 44V30c0-11 8-20 20-20s20 8 20 19v15"/><path d="M54 30c4 0 7 3 7 7v3"/><path d="M24 44V35M44 44V35"/><path d="M22 13c-6 0-10 5-10 11 0 4 2 7 6 8"/><circle cx="40" cy="23" r="1.6" fill="currentColor"/><path d="M14 30c-4 2-8 1-10-3"/></svg>
+      <span class="wm"><b>MONIQUE PAULA</b><small>Nutricionista infantil</small></span>
+    </a>
+    <div class="links"><a href="#sobre">Sobre</a><a href="#atendimentos">Atendimentos</a><a href="#online">Online</a><a href="#avaliacoes">Avaliações</a><a href="#contato">Onde atendo</a></div>
+    <div class="nav-cta">
+      <a class="btn btn-pink" href="#agendar">Agendar consulta</a>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mmenu" id="mmenu">
+    <a href="#sobre">Sobre mim</a><a href="#atendimentos">Atendimentos</a><a href="#online">Consulta online</a><a href="#avaliacoes">Avaliações</a><a href="#contato">Onde atendo</a>
+    <a class="btn btn-pink" href="#agendar">Agendar consulta</a>
+  </div>
+</nav>
+
+<header class="hero" id="topo">
+  <div class="wrap">
+    <div>
+      <span class="tag">Introdução alimentar · Seletividade · Obesidade</span>
+      <h1>E se comer não fosse uma <em class="squig">batalha?</em></h1>
+      <p class="lead">Sou nutricionista infantil e atendo crianças e adolescentes de 0 a 18 anos. Ajudo a sua família a transformar a hora da refeição em um momento leve, sem brigas e sem terrorismo nutricional.</p>
+      <div class="ctas">
+        <a class="btn btn-pink" href="#agendar">Agendar consulta</a>
+        <a class="btn btn-line" href="#atendimentos">Conhecer os atendimentos</a>
+      </div>
+      <div class="proof">
+        <span class="stars" aria-label="Nota 5 de 5">★★★★★</span>
+        <small>5,0 no Google · 12 avaliações de famílias</small>
+      </div>
+      <div class="creds"><span>🎓 Nutrição USP</span><span>👶 Especialista em Nutrição Infantil · Unifesp</span><span>CRN-3 70972</span></div>
+    </div>
+    <div class="hero-art">
+      <div class="ph"><img src="img/hero.jpg" alt="Nutricionista Monique Paula sentada no consultório infantil com livros" width="900" height="959" fetchpriority="high"></div>
+      <div class="fc a"><i>🥕</i>Introdução alimentar</div>
+      <div class="fc b"><i>🍓</i>Seletividade</div>
+      <div class="fc c"><i>👧</i>0 a 18 anos</div>
+    </div>
+  </div>
+</header>
+
+<div class="band">
+  <div class="wrap">
+    <div><div><span class="n">01</span><span><b>Só crianças e adolescentes</b><p>Meu consultório é 100% pensado para a infância e a adolescência.</p></span></div></div>
+    <div><div><span class="n">02</span><span><b>A família junto</b><p>A alimentação da criança começa pela mesa de casa, então os pais participam de tudo.</p></span></div></div>
+    <div><div><span class="n">03</span><span><b>Presencial ou online</b><p>Em Santana (SP), em Mogi das Cruzes ou por vídeo, de onde você estiver.</p></span></div></div>
+  </div>
+</div>
+
+<section class="about" id="sobre">
+  <div class="wrap">
+    <div class="pic"><img src="img/sobre.jpg" alt="Monique Paula sorrindo em um jardim" loading="lazy" width="800" height="732"><span class="badge">🐘 A nutri da sua criança</span></div>
+    <div>
+      <span class="tag ol">Sobre mim</span>
+      <div class="sh" style="margin-bottom:14px"><h2>Oi, eu sou a Monique!</h2></div>
+      <p>A nutrição infantil sempre foi, pra mim, algo além do trabalho. É um propósito: uma boa alimentação começa ainda na primeira infância e, se bem conduzida, se estende por toda a vida.</p>
+      <p>Nas consultas, olho para as particularidades de cada criança e de cada família, com acolhimento, receitas e estratégias que funcionam no dia a dia de verdade.</p>
+      <ul class="timeline">
+        <li><b>2021</b><span>Graduação em Nutrição pela Faculdade de Saúde Pública da USP</span></li>
+        <li><b>2023</b><span>Especialização em Nutrição Infantil pela Unifesp</span></li>
+        <li><b>2024</b><span>Especialização em Adolescência pela Unifesp</span></li>
+      </ul>
+      <div class="fun">💚 Curiosidade: antes da Nutrição eu já tinha feito outra graduação, adoro matemática e amo desacelerar na natureza (de pé descalço, de preferência).</div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="atendimentos">
+  <div class="wrap">
+    <div class="sh center"><span class="tag">Atendimentos</span><h2>Como posso ajudar a sua família</h2><p>Cada criança tem o seu tempo. O plano é construído junto com vocês, fase a fase, de um jeito que caiba na rotina da casa.</p></div>
+    <div class="grid">
+      <div class="card"><div class="ico" style="background:var(--pink-soft)">🥣</div><h3>Introdução alimentar</h3><p>Do primeiro alimento ao prato da família: segurança, cardápio, quantidades e métodos (BLW, papinhas ou participativo).</p><div class="meta">A partir dos 6 meses</div><a href="#agendar" data-serv="0">Agendar →</a></div>
+      <div class="card"><div class="ico" style="background:var(--olive-soft)">🥦</div><h3>Seletividade alimentar</h3><p>Para a criança que "não come nada": estratégias para ampliar o repertório sem pressão e sem brigas na mesa.</p><div class="meta">Crianças de 1 a 12 anos</div><a href="#agendar" data-serv="1">Agendar →</a></div>
+      <div class="card"><div class="ico" style="background:#fdf1cf">💪</div><h3>Obesidade infantil</h3><p>Cuidado com o peso sem dieta restritiva: mudança de hábitos da família, avaliação corporal e acompanhamento próximo.</p><div class="meta">Crianças e adolescentes</div><a href="#agendar" data-serv="2">Agendar →</a></div>
+      <div class="card"><div class="ico" style="background:#ece8f8">🎒</div><h3>Nutrição na adolescência</h3><p>Fase de muitas mudanças: crescimento, esporte, imagem corporal e autonomia para escolher bem.</p><div class="meta">De 10 a 18 anos</div><a href="#agendar" data-serv="3">Agendar →</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="online">
+  <div class="wrap">
+    <div class="online">
+      <img src="img/online.jpg" alt="Monique Paula em atendimento online pelo computador" loading="lazy" width="360" height="460">
+      <div>
+        <span class="tag ol">Consulta online</span>
+        <h2>Atendimento de qualquer lugar do Brasil</h2>
+        <p>A consulta online tem o mesmo cuidado da presencial. Muitas famílias fazem a introdução alimentar por vídeo, no conforto de casa e no horário da soneca 😉</p>
+        <ul><li>Videochamada pelo celular ou computador</li><li>Plano alimentar e receitas enviados no WhatsApp</li><li>Acompanhamento entre as consultas</li></ul>
+        <a class="btn btn-olive" href="#agendar" data-modal="online">Agendar consulta online</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="como-funciona" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh"><span class="tag">Como funciona</span><h2>Do agendamento ao acompanhamento</h2></div>
+    <div class="steps">
+      <div class="step"><h3>Agende online</h3><p>Escolha o atendimento, o dia e o horário aqui no site, em menos de um minuto.</p></div>
+      <div class="step"><h3>Confirmação no WhatsApp</h3><p>Você recebe a confirmação na hora e um lembrete um dia antes da consulta.</p></div>
+      <div class="step"><h3>Primeira consulta</h3><p>Conversamos sobre a rotina, o histórico e o que a criança gosta e não gosta.</p></div>
+      <div class="step"><h3>Plano e retorno</h3><p>Você sai com um plano prático e seguimos juntos acompanhando a evolução.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="agendar" style="padding-top:0">
+  <div class="wrap">
+    <div class="booking">
+      <div class="intro">
+        <span class="tag" style="background:rgba(255,255,255,.12);color:#fff">Agenda online</span>
+        <h2>Marque a consulta sem precisar esperar resposta</h2>
+        <p>Veja os horários livres e agende na hora, de dia ou de madrugada.</p>
+        <ul><li>Confirmação imediata</li><li>Lembrete automático no WhatsApp</li><li>Remarcação fácil</li></ul>
+      </div>
+      <div class="panel">
+        <div id="form">
+          <h4>1. Atendimento</h4>
+          <div class="chips" id="bServ"></div>
+          <h4>2. Formato</h4>
+          <div class="modal-row" id="bMod">
+            <button class="chip on" data-m="Presencial · Santana">🏥 Presencial</button>
+            <button class="chip" data-m="Online">💻 Online</button>
+          </div>
+          <h4>3. Dia</h4>
+          <div class="chips days" id="bDias"></div>
+          <h4>4. Horário</h4>
+          <div class="chips" id="bHoras"><span style="color:var(--muted);font-size:14.5px">Escolha um dia primeiro</span></div>
+          <h4>5. Seus dados</h4>
+          <div class="two">
+            <div class="field"><label class="sr" for="bResp">Seu nome</label><input id="bResp" placeholder="Seu nome" autocomplete="name"></div>
+            <div class="field"><label class="sr" for="bCrianca">Nome e idade da criança</label><input id="bCrianca" placeholder="Nome e idade da criança"></div>
+          </div>
+          <div class="field"><label class="sr" for="bTel">WhatsApp</label><input id="bTel" placeholder="WhatsApp (11) 9...." inputmode="tel" autocomplete="tel"></div>
+          <button class="btn btn-pink" id="bOk" disabled>Confirmar agendamento</button>
+          <p class="demo-note">Demonstração: o agendamento aparece no painel da nutri, nada é enviado.</p>
+        </div>
+        <div class="done" id="done">
+          <div class="big">🎉</div>
+          <h3>Consulta agendada!</h3>
+          <p>No site real, a confirmação chega no seu WhatsApp e o horário aparece na hora no painel da Monique.</p>
+          <div class="resume" id="resume"></div>
+          <a class="btn btn-line" href="painel.html" style="margin-bottom:8px">Ver no painel da nutri →</a>
+          <button class="btn btn-line" id="bAgain">Fazer outro teste</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="avaliacoes" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh center"><span class="tag ol">Avaliações</span><h2>O que as famílias dizem</h2><span class="g-badge"><span class="stars">★★★★★</span> 5,0 no Google</span></div>
+    <div class="reviews">
+      <div class="rv"><span class="stars">★★★★★</span><p>"Além de passar muito conhecimento, é atenta às particularidades do meu filho, que tem dificuldade alimentar."</p><b>Ana Luiza</b><small>Avaliação no Google</small></div>
+      <div class="rv"><span class="stars">★★★★★</span><p>"Fiz uma consulta online para a introdução alimentar do meu filho. Foi leve e descontraída e ela me passou muita segurança."</p><b>Tais Conte</b><small>Avaliação no Google</small></div>
+      <div class="rv"><span class="stars">★★★★★</span><p>"Muito atenciosa e amorosa com os pacientes. Ela me tranquilizou muito sobre a alimentação e o ganho de peso do meu filho de 1 ano."</p><b>Mariana Barbosa</b><small>Avaliação no Google</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="duvidas" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh center"><span class="tag">Dúvidas</span><h2>Perguntas frequentes</h2></div>
+    <div class="faq">
+      <details><summary>A partir de qual idade você atende?</summary><p>Atendo somente crianças e adolescentes, de 0 a 18 anos: desde bebês começando a introdução alimentar até a adolescência.</p></details>
+      <details><summary>Preciso levar exames?</summary><p>Se tiver exames recentes, leve ou envie antes. Se não tiver, avalio na consulta se é preciso pedir algum.</p></details>
+      <details><summary>Como funciona a consulta online?</summary><p>É uma videochamada no mesmo formato da presencial. O plano alimentar e as receitas chegam pelo WhatsApp.</p></details>
+      <details><summary>Onde ficam os consultórios?</summary><p>Em São Paulo, no Ateliê Pediátrico, na Av. Gen. Ataliba Leonel, 1205 (Santana). Também atendo em Mogi das Cruzes; o endereço é enviado na confirmação.</p></details>
+      <details><summary>Posso remarcar a consulta?</summary><p>Pode, com até 24 horas de antecedência, pelo link que chega na confirmação ou pelo WhatsApp.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contato" style="padding-top:0">
+  <div class="wrap">
+    <div class="c-box">
+      <h3>Onde atendo</h3>
+      <div class="c-row">📍<span><b>São Paulo · Santana</b>Ateliê Pediátrico · Av. Gen. Ataliba Leonel, 1205, conj. 83 · Santana, São Paulo/SP · CEP 02033-000</span></div>
+      <div class="c-row">📍<span><b>Mogi das Cruzes</b>Atendimento presencial, endereço enviado na confirmação</span></div>
+      <div class="c-row">💻<span><b>Online</b>Consultas por vídeo para todo o Brasil</span></div>
+      <div class="c-row">🕒<span><b>Horários</b>Segunda a sexta, a partir das 8h · veja os horários livres na agenda</span></div>
+      <div class="c-actions">
+        <a class="btn btn-pink" id="waBtn" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-line" href="https://www.instagram.com/_nutrimonique/" target="_blank" rel="noopener">@_nutrimonique</a>
+        <a class="btn btn-line" href="https://www.google.com/maps/dir/?api=1&destination=Av.+Gen.+Ataliba+Leonel,+1205+-+Santana,+S%C3%A3o+Paulo+-+SP,+02033-000" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+    </div>
+    <div class="map"><iframe title="Mapa do consultório em Santana" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Av.%20Gen.%20Ataliba%20Leonel%2C%201205%20-%20Santana%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002033-000&z=16&output=embed"></iframe></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="ano"></span> Monique Paula · Nutricionista Infantil · CRN-3 70972</div>
+    <div class="row"><a href="https://www.instagram.com/_nutrimonique/" target="_blank" rel="noopener">Instagram</a><a href="#agendar">Agendar</a><a href="painel.html">Área da nutri</a></div>
+    <div class="kz">Prévia desenvolvida por Kanzen Studio</div>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+
+<script>
+const WA="5511913423558";
+const SERV=[
+  {t:"Introdução alimentar", dur:"60 min", preco:0},
+  {t:"Seletividade alimentar", dur:"60 min", preco:0},
+  {t:"Obesidade infantil", dur:"60 min", preco:0},
+  {t:"Nutrição na adolescência", dur:"60 min", preco:0},
+  {t:"Retorno", dur:"40 min", preco:0}
+];
+const HORAS=["08:00","09:00","10:00","11:00","14:00","15:00","16:00","17:00"];
+const $=id=>document.getElementById(id);
+$('ano').textContent=new Date().getFullYear();
+const wa=`https://wa.me/${WA}?text=${encodeURIComponent('Olá, Monique! Vim pelo site e gostaria de agendar uma consulta.')}`;
+$('waBtn').href=wa; $('waFloat').href=wa;
+
+/* menu mobile */
+const nav=$('nav');
+$('burger').onclick=()=>{const o=nav.classList.toggle('open');$('burger').setAttribute('aria-expanded',o);};
+$('mmenu').addEventListener('click',e=>{if(e.target.tagName==='A'){nav.classList.remove('open');$('burger').setAttribute('aria-expanded',false);}});
+
+/* agendamento demo */
+const st={serv:null,dia:null,hora:null,mod:"Presencial · Santana"};
+$('bServ').innerHTML=SERV.map((s,i)=>`<button class="chip" data-i="${i}">${s.t}</button>`).join('');
+function pickServ(i){st.serv=SERV[i];[...$('bServ').children].forEach(c=>c.classList.toggle('on',+c.dataset.i===+i));check();}
+$('bServ').onclick=e=>{const b=e.target.closest('.chip');if(b)pickServ(b.dataset.i);};
+document.querySelectorAll('[data-serv]').forEach(a=>a.addEventListener('click',()=>pickServ(a.dataset.serv)));
+function pickMod(m){st.mod=m;[...$('bMod').children].forEach(c=>c.classList.toggle('on',c.dataset.m===m));}
+$('bMod').onclick=e=>{const b=e.target.closest('.chip');if(b)pickMod(b.dataset.m);};
+document.querySelectorAll('[data-modal="online"]').forEach(a=>a.addEventListener('click',()=>pickMod('Online')));
+const dn=['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],mn=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
+const dias=[];let d=new Date();d.setDate(d.getDate()+1);
+while(dias.length<10){if(d.getDay()!==0&&d.getDay()!==6)dias.push(new Date(d));d.setDate(d.getDate()+1);}
+$('bDias').innerHTML=dias.map((x,i)=>`<button class="chip" data-i="${i}">${dn[x.getDay()]}<small>${x.getDate()} ${mn[x.getMonth()]}</small></button>`).join('');
+function seed(n){let x=Math.sin(n)*10000;return x-Math.floor(x);}
+$('bDias').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;const x=dias[b.dataset.i];st.dia=x;st.hora=null;
+  [...$('bDias').children].forEach(c=>c.classList.toggle('on',c===b));
+  $('bHoras').innerHTML=HORAS.map((h,j)=>{const busy=seed(x.getDate()*13+j)>.6;return `<button class="chip" ${busy?'disabled':''} data-h="${h}">${h}</button>`;}).join('');
+  check();};
+$('bHoras').onclick=e=>{const b=e.target.closest('.chip');if(!b||b.disabled)return;st.hora=b.dataset.h;[...$('bHoras').children].forEach(c=>c.classList&&c.classList.toggle('on',c===b));check();};
+['bResp','bCrianca','bTel'].forEach(id=>$(id).oninput=check);
+function check(){$('bOk').disabled=!(st.serv&&st.dia&&st.hora&&$('bResp').value.trim()&&$('bTel').value.trim());}
+const esc=s=>s.replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+$('bOk').onclick=()=>{
+  const ag={id:Date.now(),serv:st.serv.t,dur:st.serv.dur,mod:st.mod,data:st.dia.toISOString().slice(0,10),hora:st.hora,resp:$('bResp').value.trim(),crianca:$('bCrianca').value.trim(),tel:$('bTel').value.trim(),status:'Confirmado',origem:'Site',novo:true};
+  try{const L=JSON.parse(localStorage.getItem('kz_monique_site')||'[]');L.push(ag);localStorage.setItem('kz_monique_site',JSON.stringify(L));}catch(e){}
+  $('resume').innerHTML=`<b>${esc(ag.serv)}</b> · ${esc(ag.mod)}<br>${dn[st.dia.getDay()]}, ${st.dia.getDate()} de ${mn[st.dia.getMonth()]} às ${ag.hora}<br>Responsável: ${esc(ag.resp)}${ag.crianca?'<br>Criança: '+esc(ag.crianca):''}`;
+  $('form').style.display='none';$('done').style.display='block';
+  $('done').scrollIntoView({behavior:'smooth',block:'center'});
+};
+$('bAgain').onclick=()=>{$('form').style.display='';$('done').style.display='none';};
+</script>
+</body>
+</html>
