@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#7b5ea7">
+<title>Agendar sessão · Dra. Edna Andrade Fisioterapia</title>
+<meta name="description" content="Fisioterapeuta no Jaçanã (Zona Norte de SP). Ortopedia, reabilitação neurológica pós-AVC, idosos e pós-operatório. Consultório ou domicílio.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%237b5ea7'/%3E%3Ctext x='32' y='41' font-family='Arial' font-weight='700' font-size='24' fill='%23fff' text-anchor='middle'%3EEA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+<div class="preview-bar">🔍 <b>Modelo</b> feito pela Kanzen Studio para a Dra. Edna Andrade · textos e imagens ilustrativos, tudo pode ser ajustado</div>
+
+<nav id="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Dra. Edna Andrade, fisioterapia · início">
+      <svg viewBox="0 0 950 630" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"><circle cx="560" cy="110" r="62" fill="currentColor" stroke="none"/><path d="M520 210 C470 300 440 360 450 450"/><path d="M450 450 L360 590"/><path d="M450 450 L560 520 L600 600"/><path d="M500 260 L640 300 L720 230"/><path d="M500 260 L380 330"/><path d="M70 520 H230 L280 430 L340 600 L380 520 H460" stroke-width="30" opacity=".55"/></g></svg>
+      <span class="wm"><b>EDNA ANDRADE</b><small>fisioterapia</small></span>
+    </a>
+    <div class="links"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="atendimentos.html">Atendimentos</a><a href="contato.html">Contato</a></div>
+    <div class="nav-cta">
+      <a class="btn btn-pink" href="agendar.html">Agendar sessão</a>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mmenu" id="mmenu">
+    <a href="index.html">Início</a><a href="sobre.html">Sobre mim</a><a href="atendimentos.html">Atendimentos</a><a href="contato.html">Contato</a>
+    <a class="btn btn-pink" href="agendar.html">Agendar sessão</a>
+  </div>
+</nav>
+
+<main>
+<header class="phead"><div class="wrap"><div class="crumb"><a href="index.html">Início</a> / Agendar</div><h1>Agende sua sessão</h1><p>Escolha o atendimento, o local, o dia e o horário livre. A confirmação chega na hora no seu WhatsApp, com lembrete um dia antes.</p></div></header>
+<section id="agendar" style="padding-top:8px">
+  <div class="wrap">
+    <div class="booking solo">
+      <div class="panel">
+        <div id="form">
+          <h4>1. Atendimento</h4>
+          <div class="chips" id="bServ"></div>
+          <h4>2. Local</h4>
+          <div class="modal-row" id="bMod">
+            <button class="chip on" data-m="Consultório · Jaçanã">🏥 Consultório</button>
+            <button class="chip" data-m="Domicílio">🏠 Domicílio</button>
+          </div>
+          <h4>3. Dia</h4>
+          <div class="chips days" id="bDias"></div>
+          <h4>4. Horário</h4>
+          <div class="chips" id="bHoras"><span style="color:var(--muted);font-size:14.5px">Escolha um dia primeiro</span></div>
+          <h4>5. Seus dados</h4>
+          <div class="two">
+            <div class="field"><label class="sr" for="bResp">Seu nome</label><input id="bResp" placeholder="Seu nome" autocomplete="name"></div>
+            <div class="field"><label class="sr" for="bCrianca">Paciente, se for outra pessoa</label><input id="bCrianca" placeholder="Paciente (se for outra pessoa)"></div>
+          </div>
+          <div class="field"><label class="sr" for="bTel">WhatsApp</label><input id="bTel" placeholder="WhatsApp (11) 9...." inputmode="tel" autocomplete="tel"></div>
+          <button class="btn btn-pink" id="bOk" disabled>Confirmar agendamento</button>
+          <p class="demo-note">Demonstração: o agendamento aparece no painel da fisio, nada é enviado.</p>
+        </div>
+        <div class="done" id="done">
+          <div class="big">🎉</div>
+          <h3>Sessão agendada!</h3>
+          <p>No site real, a confirmação chega no seu WhatsApp e o horário aparece na hora no painel da Edna.</p>
+          <div class="resume" id="resume"></div>
+          <a class="btn btn-line" href="painel.html" style="margin-bottom:8px">Ver no painel da fisio →</a>
+          <button class="btn btn-line" id="bAgain">Fazer outro teste</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="padding-top:0"><div class="wrap"><div class="pager"><a href="atendimentos.html"><small>← Anterior</small><b>Atendimentos</b></a><a class="nx" href="contato.html"><small>Próxima →</small><b>Contato e endereço</b></a></div></div></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="flogo"><svg viewBox="0 0 950 630" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"><circle cx="560" cy="110" r="62" fill="currentColor" stroke="none"/><path d="M520 210 C470 300 440 360 450 450"/><path d="M450 450 L360 590"/><path d="M450 450 L560 520 L600 600"/><path d="M500 260 L640 300 L720 230"/><path d="M500 260 L380 330"/><path d="M70 520 H230 L280 430 L340 600 L380 520 H460" stroke-width="30" opacity=".55"/></g></svg><b>EDNA ANDRADE</b><small>fisioterapia</small></div>
+    <div>© <span id="ano"></span> Dra. Edna Andrade · Fisioterapeuta</div>
+    <div class="row"><a href="sobre.html">Sobre</a><a href="atendimentos.html">Atendimentos</a><a href="agendar.html">Agendar</a><a href="contato.html">Contato</a><a href="painel.html">Área da fisio</a></div>
+    <div class="kz">Modelo desenvolvido por Kanzen Studio</div>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+
+<script src="site.js?v=2"></script>
+<script src="agendar.js?v=2"></script>
+</body>
+</html>
