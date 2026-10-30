@@ -1,8 +1,8 @@
 const SERV=[
-  {t:"Fisioterapia ortopédica", dur:"50 min", preco:0},
-  {t:"Reabilitação neurológica", dur:"50 min", preco:0},
-  {t:"Fisioterapia para idosos", dur:"50 min", preco:0},
-  {t:"Pós-operatório", dur:"50 min", preco:0},
+  {t:"Saúde do idoso", dur:"50 min", preco:0},
+  {t:"Fisioterapia respiratória", dur:"50 min", preco:0},
+  {t:"Reabilitação cardíaca", dur:"50 min", preco:0},
+  {t:"Equilíbrio e prevenção de quedas", dur:"50 min", preco:0},
   {t:"Avaliação", dur:"60 min", preco:0}
 ];
 const HORAS=["07:00","08:00","09:00","10:00","11:00","13:00","14:00","15:00"];
