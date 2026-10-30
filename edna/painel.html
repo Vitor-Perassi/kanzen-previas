@@ -270,7 +270,7 @@ const $=id=>document.getElementById(id);
 const brl=v=>'R$ '+v.toLocaleString('pt-BR');
 const esc=s=>String(s??'').replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
 const dn=['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],dnl=['domingo','segunda','terça','quarta','quinta','sexta','sábado'],mn=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'],mnl=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
-const SERV=[{t:"Saúde do idoso",p:150},{t:"Fisioterapia respiratória",p:170},{t:"Reabilitação cardíaca",p:160},{t:"Equilíbrio e prevenção de quedas",p:160},{t:"Avaliação",p:180}];
+const SERV=[{t:"Saúde do idoso",p:150},{t:"Fisioterapia respiratória",p:170},{t:"Reabilitação cardíaca",p:160},{t:"Drenagem linfática",p:140},{t:"Massagem modeladora",p:140},{t:"Liberação miofascial",p:150},{t:"Avaliação",p:180}];
 const price=t=>(SERV.find(s=>s.t===t)||{p:300}).p;
 const iso=d=>{const x=new Date(d);x.setMinutes(x.getMinutes()-x.getTimezoneOffset());return x.toISOString().slice(0,10);};
 const today=new Date();today.setHours(0,0,0,0);const TODAY=iso(today);
