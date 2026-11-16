@@ -207,7 +207,7 @@ tr:hover td{background:#fcfaf8}
         <div>
           <div class="box"><h3>Faturamento <small>últimos 6 meses</small></h3><div class="bars" id="bars"></div></div>
           <div class="box"><h3>Por atendimento <small>este mês</small></h3><div class="split" id="split"></div></div>
-          <div class="box"><h3>Lembretes no WhatsApp</h3><p style="color:var(--muted);font-size:14.5px">Amanhã saem <b id="lemb-n">0</b> lembretes automáticos às 9h. Faltas este mês: <b id="faltas">0</b> (<span id="faltas-p"></span>).</p></div>
+          <div class="box"><h3>Próximos dias</h3><p style="color:var(--muted);font-size:14.5px">Amanhã: <b id="lemb-n">0</b> consultas agendadas. Faltas este mês: <b id="faltas">0</b> (<span id="faltas-p"></span>).</p></div>
         </div>
       </div>
     </div>
@@ -240,7 +240,7 @@ tr:hover td{background:#fcfaf8}
 
     <!-- CONFIG -->
     <div class="view" id="v-config">
-      <div class="top"><div><h2>Ajustes</h2><p>Valores, horários e mensagens automáticas</p></div></div>
+      <div class="top"><div><h2>Ajustes</h2><p>Valores e horários de atendimento</p></div></div>
       <div class="cols">
         <div class="box"><h3>Atendimentos e valores <small>exemplo</small></h3><div id="cfg-serv"></div></div>
         <div>
@@ -248,11 +248,6 @@ tr:hover td{background:#fcfaf8}
             <div class="set"><span>Segunda a sexta<small>08:00 às 18:00 · {{LOCAL}}</small></span><label class="sw"><input type="checkbox" checked><span></span></label></div>
             <div class="set"><span>Sábado<small>Somente online, 09:00 às 12:00</small></span><label class="sw"><input type="checkbox"><span></span></label></div>
             <div class="set"><span>{{M2}}<small>Dias definidos por você</small></span><label class="sw"><input type="checkbox" checked><span></span></label></div>
-          </div>
-          <div class="box"><h3>WhatsApp automático</h3>
-            <div class="set"><span>Confirmação ao agendar<small>Enviada na hora para o responsável</small></span><label class="sw"><input type="checkbox" checked><span></span></label></div>
-            <div class="set"><span>Lembrete 1 dia antes<small>Com opção de confirmar ou remarcar</small></span><label class="sw"><input type="checkbox" checked><span></span></label></div>
-            <div class="set"><span>Pedido de avaliação no Google<small>Enviado após a consulta</small></span><label class="sw"><input type="checkbox"><span></span></label></div>
           </div>
         </div>
       </div>
@@ -398,7 +393,7 @@ function newAppt(){const t=new Date(today);t.setDate(t.getDate()+1);
   <label>Formato</label><select id="nm">${'<option>'+CFG.m1+'</option><option>'+CFG.m2+'</option>'}</select>
   <div class="ft"><button class="btn btn-line" onclick="closeM()">Cancelar</button><button class="btn btn-pink" onclick="addAppt()">Agendar</button></div>`;
   $('modal').classList.add('on');}
-function addAppt(){const p=PAC[+$('np').value];AG.push({id:aid++,pac:p.id,crianca:p.crianca,resp:p.resp,tel:p.tel,serv:$('ns').value,mod:$('nm').value,data:$('nd').value,hora:$('nh').value,status:'Confirmado',origem:'Painel'});AG.sort((a,b)=>(a.data+a.hora).localeCompare(b.data+b.hora));closeM();render();toast('Consulta agendada · confirmação enviada no WhatsApp (demo)');}
+function addAppt(){const p=PAC[+$('np').value];AG.push({id:aid++,pac:p.id,crianca:p.crianca,resp:p.resp,tel:p.tel,serv:$('ns').value,mod:$('nm').value,data:$('nd').value,hora:$('nh').value,status:'Confirmado',origem:'Painel'});AG.sort((a,b)=>(a.data+a.hora).localeCompare(b.data+b.hora));closeM();render();toast('Consulta agendada');}
 if(logged) enter();
 </script>
 </body>
